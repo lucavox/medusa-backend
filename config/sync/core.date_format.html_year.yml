@@ -1,0 +1,10 @@
+uuid: 22ee9879-ac5e-42fb-86a6-e1497b337141
+langcode: it
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: OjekiQuX9RbVQ2_8jOHBL94RgYLePqX7wpfNGgcQzrk
+id: html_year
+label: 'Anno HTML'
+locked: true
+pattern: 'Y'
