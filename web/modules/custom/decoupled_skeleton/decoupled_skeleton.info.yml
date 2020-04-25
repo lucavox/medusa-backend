@@ -1,0 +1,4 @@
+name: Decoupled Skeleton
+description: Prepare REST API endpoints for accessing forms
+core: 8.x
+type: module

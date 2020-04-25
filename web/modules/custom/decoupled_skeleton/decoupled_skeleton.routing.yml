@@ -1,0 +1,7 @@
+decoupled_skeleton.simple_form:
+  path: '/form/user-details'
+  defaults:
+    _form: '\Drupal\decoupled_skeleton\Form\UserDetailsForm'
+    _title: 'User Details Form'
+  requirements:
+    _permission: 'access content'
