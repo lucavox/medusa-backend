@@ -1,0 +1,20 @@
+uuid: 1faa8669-3649-4067-b3e9-8e6e602dd6f7
+langcode: it
+status: true
+dependencies:
+  module:
+    - basic_auth
+    - node
+    - serialization
+    - user
+id: entity.node
+plugin_id: 'entity:node'
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - basic_auth
+    - cookie

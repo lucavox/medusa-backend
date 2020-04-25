@@ -1,0 +1,10 @@
+uuid: 00686e5c-8b8c-4e88-bbaa-b754d92551e0
+langcode: it
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: yoNVreoTdTZTY7GuE8fI9Jmxqdz8vlo4ZJKixMNSosw
+name: Etichette
+vid: tags
+description: 'Utilizza i tag per organizzare in categorie i contenuti riguardanti lo stesso argomento.'
+weight: 0

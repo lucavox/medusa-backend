@@ -1,0 +1,13 @@
+uuid: ebc10372-13bc-47b4-9ea6-faf109f42d2e
+langcode: it
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: LhdsoZPL_pFas2fjaAWue4zvrQ_tEVofLYtcNec-JGM
+id: node_save_action
+label: 'Salva contenuto'
+type: node
+plugin: 'entity:save_action:node'
+configuration: {  }
