@@ -1,0 +1,57 @@
+<?php
+
+/**
+ * @file
+ * Contains decoupled_skeleton.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function decoupled_skeleton_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the decoupled_skeleton module.
+    case 'help.page.decoupled_skeleton':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function decoupled_skeleton_theme() {
+  $theme = [];
+  $theme['customers'] = [
+    'render element' => 'elements',
+    'file' => 'customers.page.inc',
+    'template' => 'customers',
+  ];
+  $theme['customers_content_add_list'] = [
+    'render element' => 'content',
+    'variables' => ['content' => NULL],
+    'file' => 'customers.page.inc',
+  ];
+  return $theme;
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK().
+ */
+function decoupled_skeleton_theme_suggestions_customers(array $variables) {
+  $suggestions = [];
+  $entity = $variables['elements']['#customers'];
+  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+  $suggestions[] = 'customers__' . $sanitized_view_mode;
+  $suggestions[] = 'customers__' . $entity->bundle();
+  $suggestions[] = 'customers__' . $entity->bundle() . '__' . $sanitized_view_mode;
+  $suggestions[] = 'customers__' . $entity->id();
+  $suggestions[] = 'customers__' . $entity->id() . '__' . $sanitized_view_mode;
+  return $suggestions;
+}

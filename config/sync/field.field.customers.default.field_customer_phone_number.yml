@@ -1,0 +1,19 @@
+uuid: 7b833a73-cce8-4d5f-bc7b-75f1a4c3c94c
+langcode: en
+status: true
+dependencies:
+  config:
+    - decoupled_skeleton.customers_type.default
+    - field.storage.customers.field_customer_phone_number
+id: customers.default.field_customer_phone_number
+field_name: field_customer_phone_number
+entity_type: customers
+bundle: default
+label: 'Phone Number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

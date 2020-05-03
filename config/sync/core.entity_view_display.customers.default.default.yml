@@ -1,0 +1,65 @@
+uuid: 7b24dbc8-b6b6-4f1f-85a2-205c697cff05
+langcode: en
+status: true
+dependencies:
+  config:
+    - decoupled_skeleton.customers_type.default
+    - field.field.customers.default.field_customer_email
+    - field.field.customers.default.field_customer_first_name
+    - field.field.customers.default.field_customer_last_name
+    - field.field.customers.default.field_customer_phone_number
+  module:
+    - user
+id: customers.default.default
+targetEntityType: customers
+bundle: default
+mode: default
+content:
+  field_customer_email:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_customer_first_name:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_customer_last_name:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_customer_phone_number:
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  name:
+    label: above
+    type: string
+    weight: -4
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  user_id:
+    label: hidden
+    type: author
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

@@ -1,0 +1,18 @@
+uuid: 0ebb8903-d6ab-4e0c-80bb-1ef72b017c0c
+langcode: en
+status: true
+dependencies:
+  module:
+    - decoupled_skeleton
+    - serialization
+    - user
+id: custome_resource
+plugin_id: custome_resource
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - cookie

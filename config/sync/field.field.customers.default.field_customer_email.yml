@@ -1,0 +1,19 @@
+uuid: eed8e94f-3fcf-4e8b-9678-636b09a90f05
+langcode: en
+status: true
+dependencies:
+  config:
+    - decoupled_skeleton.customers_type.default
+    - field.storage.customers.field_customer_email
+id: customers.default.field_customer_email
+field_name: field_customer_email
+entity_type: customers
+bundle: default
+label: Email
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

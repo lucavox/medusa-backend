@@ -1,0 +1,22 @@
+# Customers routing definition
+
+entity.customers.canonical:
+  route_name: entity.customers.canonical
+  base_route: entity.customers.canonical
+  title: 'View'
+
+entity.customers.edit_form:
+  route_name: entity.customers.edit_form
+  base_route: entity.customers.canonical
+  title: 'Edit'
+
+entity.customers.version_history:
+  route_name: entity.customers.version_history
+  base_route: entity.customers.canonical
+  title: 'Revisions'
+
+entity.customers.delete_form:
+  route_name:  entity.customers.delete_form
+  base_route:  entity.customers.canonical
+  title: Delete
+  weight: 10

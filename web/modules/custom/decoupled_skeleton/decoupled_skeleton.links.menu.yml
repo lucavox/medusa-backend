@@ -1,0 +1,17 @@
+
+# Customers menu items definition
+entity.customers.collection:
+  title: 'Customers list'
+  route_name: entity.customers.collection
+  description: 'List Customers entities'
+  parent: system.admin_structure
+  weight: 100
+
+
+# Customers type menu items definition
+entity.customers_type.collection:
+  title: 'Customers type'
+  route_name: entity.customers_type.collection
+  description: 'List Customers type (bundles)'
+  parent: system.admin_structure
+  weight: 99
