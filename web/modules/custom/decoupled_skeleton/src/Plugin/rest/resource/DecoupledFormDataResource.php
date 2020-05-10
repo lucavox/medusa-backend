@@ -6,18 +6,19 @@ use Drupal\rest\Plugin\ResourceBase;
 use Drupal\rest\ResourceResponse;
 use Drupal\decoupled_skeleton\Entity\Customers;
 
+
 /**
- * Provides a Demo Resource
+ * Get user details Resource
  *
  * @RestResource(
- *   id = "custome_resource",
- *   label = @Translation("Customer Resource"),
+ *   id = "decoupled_form",
+ *   label = @Translation("Decoupled Form Data"),
  *   uri_paths = {
- *     "canonical" = "/customers"
+ *     "canonical" = "/decoupled-form"
  *   }
  * )
  */
-class CustomerResource extends ResourceBase {
+class DecoupledFormDataResource extends ResourceBase {
 
   /**
    * Responds to entity GET requests.
@@ -39,9 +40,32 @@ class CustomerResource extends ResourceBase {
       }
     }
     $response = new ResourceResponse($data);
-    // In order to generate fresh result every time (without clearing
-    // the cache), you need to invalidate the cache.
     $response->addCacheableDependency($data);
+    return $response;
+  }
+
+  /**
+   * Post request
+   */
+  public function post($data) {
+    if (!empty($data)) {
+      $customer_entity = Customers::create([
+        'type' => 'default',
+        'name' => $data['first_name'] . ' ' . $data['last_name'],
+        'field_customer_first_name' => $data['first_name'],
+        'field_customer_last_name' => $data['last_name'],
+        'field_customer_phone_number' => $data['phone'],
+        'field_customer_email' => $data['email'],
+      ]);
+      $customer_entity->save();
+      if($customer_entity) {
+       $message[] = [
+         'status' => 200,
+         'message' => 'Data is saved successfully',
+       ];
+      }
+    }
+    $response = new ResourceResponse($message);
     return $response;
   }
 
