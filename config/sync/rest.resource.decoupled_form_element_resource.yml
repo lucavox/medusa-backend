@@ -1,4 +1,4 @@
-uuid: 0ebb8903-d6ab-4e0c-80bb-1ef72b017c0c
+uuid: 4594e0b0-5a34-43c1-957e-c16907ef6ca1
 langcode: en
 status: true
 dependencies:
@@ -6,8 +6,8 @@ dependencies:
     - decoupled_skeleton
     - serialization
     - user
-id: custome_resource
-plugin_id: custome_resource
+id: decoupled_form_element_resource
+plugin_id: decoupled_form_element_resource
 granularity: resource
 configuration:
   methods:

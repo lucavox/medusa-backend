@@ -1,0 +1,19 @@
+uuid: 8d826d12-4f5e-4e08-aaa7-6f265741fca1
+langcode: en
+status: true
+dependencies:
+  module:
+    - decoupled_skeleton
+    - serialization
+    - user
+id: decoupled_form
+plugin_id: decoupled_form
+granularity: resource
+configuration:
+  methods:
+    - GET
+    - POST
+  formats:
+    - json
+  authentication:
+    - cookie

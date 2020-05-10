@@ -5,11 +5,14 @@ dependencies: {  }
 _core:
   default_config_hash: pq_mEIu_B4widZN7Ap81iCJSjShFFdcL0jEiCi8VrDk
 id: anonymous
-label: 'Utente anonimo'
+label: 'Anonymous user'
 weight: 0
 is_admin: false
 permissions:
   - 'access comments'
   - 'access site-wide contact form'
+  - 'restful get decoupled_form'
+  - 'restful get decoupled_form_element_resource'
+  - 'restful post decoupled_form'
   - 'search content'
   - 'use text format restricted_html'
