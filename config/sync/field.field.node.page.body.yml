@@ -1,0 +1,25 @@
+uuid: 200849d5-dae3-4d18-9232-f3090b1d0fe4
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.page
+  module:
+    - text
+_core:
+  default_config_hash: KgVkxLl_K3E3lvN6CEoWQIDT0V8J4Mv-fVYrAIc7-FE
+id: node.page.body
+field_name: body
+entity_type: node
+bundle: page
+label: Corpo
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

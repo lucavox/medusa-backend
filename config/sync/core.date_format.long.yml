@@ -1,0 +1,10 @@
+uuid: da0ef8aa-0a73-4268-8c40-1c169d117edc
+langcode: it
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: og8sWXhBuHbLMw3CoiBEZjgqSyhFBFmcbUW_wLcfNbo
+id: long
+label: 'Formato predefinito data lunga'
+locked: false
+pattern: 'l, F j, Y - H:i'
